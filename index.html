@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@400;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+    integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <title>Quiz App</title>
+</head>
+<body>
+
+    <div id="start">
+        <h2>Quiz App</h2>
+        <form>
+            <label for="num-questions">Number of questions:</label>
+            <select name="num-questions" id="num-questions">
+                <option value="5">5</option>
+                <option value="10">10</option>
+            </select>
+            <label for="category">Select category:</label>
+            <select name="category" id="category">
+                <option value="any">Any category</option>
+                <option value="20">Mythology</option>
+                <option value="21">Sports</option>
+                <option value="22">Geography</option>
+                <option value="23">History</option>
+                <option value="24">Politics</option>
+                <option value="25">Art</option>
+            </select>
+            <label for="difficulty">Select difficulty:</label>
+            <select name="difficulty" id="difficulty">
+                <option value="any">Any difficulty</option>
+                <option value="easy">Easy</option>
+                <option value="medium">Medium</option>
+                <option value="hard">Hard</option>
+            </select>
+            <label for="type">Select type:</label>
+            <select name="type" id="type">
+                <option value="any">Any type</option>
+                <option value="multiple">Multiple choice</option>
+                <option value="boolean">True / False</option>
+            </select>
+        </form>
+        <button id="game-start">Start</button>
+    </div>
+
+    <div id="container" class="hide">
+        <div id="progress">
+            <p id="text">Questions</p>
+            <div id="bar">
+                <div id="progress-bar"></div>
+            </div>
+            <p id="number"></p>
+        </div>
+        <div id="score">
+            <p>Score</p>
+            <p class="points"></p>
+        </div>
+        <div id="question"></div>
+        <ul id="options"></ul>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+</html>
